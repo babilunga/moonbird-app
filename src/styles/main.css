@@ -1,0 +1,61 @@
+:root {
+  --font-light: 'Conv_LunchBox_Light';
+  --font-bold: 'Conv_LunchBox_Bold';
+  --light-purpule: #be6cff;
+  --dark-purpule: #270d4b;
+  --text-purple: #3b2067;
+  --text-light-purple: #9a8eb2;
+  --gradient: linear-gradient(
+    135deg,
+    var(--light-purpule) 0%,
+    var(--dark-purpule) 100%
+  );
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: #fafbfe; */
+  background-color: #fafbfe;
+}
+.container {
+  max-width: 1144px;
+}
+.apiarance {
+  transition: all 0.6s ease-in-out 0s;
+}
+.title {
+  font-family: 'Conv_LunchBox_Bold';
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--text-purple);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Conv_LunchBox_Light';
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--text-light-purple);
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 1560px) {
+  .container {
+    /* max-width: 1440px; */
+  }
+}
+
+@media screen and (min-width: 1919px) {
+}
+
+@media screen and (max-width: 1025px) {
+  .title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,457 @@
+.roadmap__container {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 95px;
+  /* background-color: #d4d4d4; */
+}
+.roadmap__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.roadmap__timeline {
+  display: block;
+  margin: 0 auto;
+  padding-top: 203px;
+  padding-bottom: 205px;
+  z-index: -1;
+}
+.roadmap__phases {
+  display: flex;
+  flex-flow: column nowrap;
+}
+/* 
+===================
+ */
+.phase {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.phase-1 {
+  flex-direction: row;
+  top: 100px;
+  left: calc(213px - 148px);
+}
+.phase-2 {
+  flex-direction: row-reverse;
+  top: 500px;
+  left: calc(292px - 148px + 200px);
+}
+.phase-3 {
+  flex-direction: row;
+  top: 820px;
+  left: calc(190px - 148px);
+}
+.phase-4 {
+  flex-direction: row-reverse;
+  top: 1160px;
+  left: calc(292px - 148px + 130px);
+}
+.phase__image {
+  width: auto;
+  height: auto;
+}
+.phase1__image {
+  margin-right: 82px;
+}
+.phase2__image {
+  margin-left: 52px;
+}
+.phase3__image {
+  margin-right: 97px;
+}
+.phase4__image {
+  margin-left: 70px;
+}
+/* 
+=================
+ */
+.phase__title {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+}
+.phase__title-left {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: right;
+}
+.phase__text {
+  display: flex;
+  font-size: 24px;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  direction: ltr;
+}
+.phase__text-left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  direction: rtl;
+}
+
+@media screen and (min-width: 1919px) {
+  .roadmap__container {
+    margin-bottom: 120px;
+  }
+  .phase__text {
+    line-height: 24px;
+  }
+  .phase__text-left {
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .roadmap__container {
+    max-width: 1144px;
+  }
+}
+@media screen and (max-width: 1144px) {
+  .roadmap__container {
+    max-width: 100vw;
+  }
+  .roadmap__timeline {
+    padding-top: 150px;
+    z-index: -1;
+  }
+  .phase {
+    width: 80vw;
+  }
+  .phase__image {
+    width: 300px;
+  }
+  .phase-1 {
+    top: 100px;
+    left: 7%;
+  }
+  .phase-2 {
+    top: 500px;
+    left: 15%;
+  }
+  .phase-3 {
+    top: 820px;
+    left: 7%;
+  }
+  .phase-4 {
+    top: 1160px;
+    left: 13%;
+  }
+  .phase1__image {
+    margin-right: 10%;
+  }
+  .phase2__image {
+    margin-left: 10%;
+  }
+  .phase3__image {
+    margin-right: 10%;
+  }
+  .phase4__image {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .roadmap__container {
+    width: 100vw;
+    margin-bottom: 60px;
+  }
+  .roadmap__title {
+    margin-bottom: 50px;
+  }
+  .roadmap__timeline {
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+  .phase-1 {
+    top: 120px;
+    left: 8%;
+  }
+  .phase-2 {
+    top: 450px;
+    left: 15%;
+  }
+  .phase-3 {
+    top: 750px;
+    left: 8%;
+  }
+  .phase-4 {
+    top: 1100px;
+    left: 12%;
+  }
+  .phase__image {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .phase__text-left {
+    direction: ltr;
+  }
+  .roadmap__title {
+    margin-bottom: 40px;
+  }
+  .roadmap__timeline {
+    height: 1150px;
+    margin: 0 40px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .phase {
+    position: absolute;
+    width: 60vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .phase-1 {
+    align-items: center;
+    top: 90px;
+    left: 28%;
+  }
+  .phase-2 {
+    align-items: center;
+    top: 420px;
+    left: 28%;
+  }
+  .phase-3 {
+    align-items: center;
+    top: 700px;
+    left: 28%;
+  }
+  .phase-4 {
+    align-items: center;
+    top: 1000px;
+    left: 28%;
+  }
+  .phase__image {
+    width: 210px;
+  }
+  .phase1__image {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .phase2__image {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .phase3__image {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .phase4__image {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .phase__title {
+    text-align: left;
+    line-height: 28px;
+  }
+  .phase__title-left {
+    text-align: left;
+    line-height: 28px;
+  }
+  .phase__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 270px;
+    direction: ltr;
+  }
+  .phase__text-left {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-size: 10px;
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .phase-1 {
+    left: 33%;
+    top: 110px;
+  }
+  .phase-2 {
+    left: 33%;
+    top: 400px;
+  }
+  .phase-3 {
+    left: 33%;
+    top: 690px;
+  }
+  .phase-4 {
+    left: 33%;
+    top: 980px;
+  }
+  .phase__image {
+    width: 200px;
+    margin-bottom: 15px;
+  }
+  .phase1__image {
+    margin-left: -25px;
+  }
+  .phase2__image {
+    margin-left: -25px;
+    width: 170px;
+  }
+  .phase3__image {
+    margin-left: -25px;
+  }
+  .phase4__image {
+    margin-left: -25px;
+  }
+  .phase__title {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .phase__title-left {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .phase__text {
+    width: 200px;
+  }
+  .phase__text-left {
+    width: 200px;
+  }
+
+  .phase__text span {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .phase__text-left span {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .roadmap__timeline {
+    height: 1380px;
+    padding-top: 90px;
+    padding-bottom: 150px;
+    margin: 0 40px 100px;
+  }
+  .phase {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: fit-content;
+  }
+  .phase-1 {
+    left: 43%;
+    top: 110px;
+  }
+  .phase-2 {
+    left: 43%;
+    top: 500px;
+  }
+  .phase-3 {
+    left: 43%;
+    top: 850px;
+  }
+  .phase-4 {
+    left: 43%;
+    top: 1220px;
+  }
+  .phase__image {
+    width: 160px;
+    margin-bottom: 15px;
+  }
+  .phase1__image {
+    margin-left: -25px;
+  }
+  .phase2__image {
+    margin-left: -25px;
+    width: 170px;
+  }
+  .phase3__image {
+    margin-left: -25px;
+  }
+  .phase4__image {
+    margin-left: -25px;
+  }
+  .phase__title {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .phase__title-left {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .phase__text {
+    width: 200px;
+  }
+  .phase__text-left {
+    width: 200px;
+  }
+
+  .phase__text span {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .phase__text-left span {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .roadmap__timeline {
+    height: 1380px;
+    padding-top: 90px;
+    padding-bottom: 150px;
+    margin: 0 30px 100px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .phase__image {
+    width: 160px;
+    margin-bottom: 15px;
+  }
+  .phase__title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .phase__title-left {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .phase__text {
+    width: 120px;
+  }
+  .phase__text-left {
+    width: 120px;
+  }
+
+  .phase__text span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .phase__text-left span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .roadmap__timeline {
+    padding-top: 70px;
+    margin: 0 10px 80px;
+  }
+  .phase-1 {
+    left: 35%;
+  }
+  .phase-2 {
+    left: 35%;
+  }
+  .phase-3 {
+    left: 35%;
+  }
+  .phase-4 {
+    left: 35%;
+  }
+  .phase__image {
+    width: 150px;
+  }
+}

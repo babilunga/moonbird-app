@@ -1,0 +1,244 @@
+.footer__container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  height: 20vw;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+.footer__container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 270px;
+  height: 20vw;
+  width: 100%;
+  background: url('../images/footer/footer-bg.svg') no-repeat bottom center;
+  background-size: cover;
+  z-index: -5;
+}
+.footer__title {
+  margin-top: 70px;
+  margin-top: 4vw;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  line-height: 36px;
+  z-index: 1;
+}
+.footer__media {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 43px;
+}
+.footer-media__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media__image {
+  width: 24px;
+  height: auto;
+}
+#youtube {
+  width: 75px;
+  height: 68px;
+  background: url('../images/footer/yt_plate.svg') no-repeat center;
+}
+#telegram {
+  width: 75px;
+  height: 68px;
+  background: url('../images/footer/tg_plate.svg') no-repeat center;
+}
+#instagram {
+  width: 75px;
+  height: 68px;
+  background: url('../images/footer/in_plate.svg') no-repeat center;
+}
+
+@media screen and (min-width: 1923px) {
+  .footer__container {
+    height: 355px;
+    height: 20vw;
+  }
+  .footer__container:after {
+    height: 355px;
+    height: 20vw;
+    background-size: cover;
+  }
+  .footer__title {
+    margin-bottom: 60px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .footer__media {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: -20px;
+  }
+  #youtube {
+    background-size: 80%;
+    width: 120px;
+    height: 95px;
+  }
+  #telegram {
+    background-size: 80%;
+    width: 120px;
+    height: 95px;
+  }
+  #instagram {
+    background-size: 80%;
+    width: 120px;
+    height: 100px;
+  }
+  .media__image {
+    width: 34px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .footer__container {
+    height: 20vw;
+  }
+  .footer__container:after {
+    height: 20vw;
+  }
+  .footer__title {
+    margin-top: 150px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .footer__media {
+    margin-top: 20px;
+  }
+  .media__image {
+    width: 44px;
+  }
+  #youtube {
+    width: 130px;
+    height: 130px;
+  }
+  #telegram {
+    width: 130px;
+    height: 130px;
+  }
+  #instagram {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .footer__container {
+    height: 30vw;
+  }
+  .footer__container:after {
+    height: 30vw;
+
+    background-size: cover;
+    background-position: bottom;
+  }
+  .footer__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 4vw;
+  }
+  .footer__media {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 3vw;
+  }
+  #youtube {
+    background-size: 80%;
+    width: 8vw;
+  }
+  #telegram {
+    background-size: 80%;
+    width: 8vw;
+  }
+  #instagram {
+    background-size: 80%;
+    width: 8vw;
+  }
+  .media__image {
+    width: 3vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footer__container {
+    height: 40vw;
+  }
+  .footer__container:after {
+    height: 40vw;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .footer__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 30px;
+  }
+  .footer__media {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  #youtube {
+    width: 70px;
+  }
+  #telegram {
+    width: 70px;
+  }
+  #instagram {
+    width: 70px;
+  }
+  .media__image {
+    width: 24px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 376px) {
+  .footer__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+  .footer__media {
+    width: 250px;
+  }
+  #youtube {
+    width: 60px;
+  }
+  #telegram {
+    width: 60px;
+  }
+  #instagram {
+    width: 60px;
+  }
+  .media__image {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .footer__container {
+    height: 50vw;
+  }
+  .footer__container:after {
+    height: 50vw;
+  }
+  .footer__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .footer__media {
+    width: 200px;
+  }
+}

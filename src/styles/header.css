@@ -1,0 +1,324 @@
+/*
+==================
+Header Section
+==================
+*/
+.header {
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 300px;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 690px;
+  width: 100%;
+  background: url('../images/header/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: -1;
+}
+/*
+==================
+Header Nav Section
+==================
+*/
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  margin-left: 20px;
+}
+.nav__logo {
+  padding: 0;
+  margin: 0;
+}
+.nav__navbar {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+}
+.nav__navbar li {
+  margin-right: 85px;
+}
+.nav__navbar li:last-child {
+  margin-right: 0;
+}
+.nav__navbar a {
+  color: white;
+}
+.nav__navbar a:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+  text-shadow: rgba(150, 116, 197, 0.2) 0 0 25px;
+}
+.nav__navbar a:active {
+  transition: ease-in-out 0.1s;
+  text-shadow: rgba(150, 116, 197, 1) 0 0 12px;
+}
+
+.main {
+  margin: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 3fr 70px 55px 0.3fr 50px;
+  grid-template-areas:
+    'main-logo trailer'
+    'main-text trailer'
+    'main-button trailer'
+    'contract-text trailer'
+    'contract-adress trailer';
+  justify-items: start;
+  gap: 20px;
+}
+
+#main-logo {
+  grid-area: main-logo;
+}
+#main-text {
+  grid-area: main-text;
+}
+#main-button {
+  grid-area: main-button;
+}
+#contract-text {
+  grid-area: contract-text;
+}
+#contract-adress {
+  grid-area: contract-adress;
+}
+#trailer {
+  grid-area: trailer;
+}
+
+.main__logo {
+  width: 100%;
+  height: 85px;
+  max-width: 310px;
+  max-height: 100%;
+  align-self: center;
+}
+.main__text {
+  color: white;
+  text-align: start;
+  margin: 0;
+  align-self: flex-end;
+}
+.main__button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #d70a84;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #d70a84;
+  border-radius: 27px;
+  box-sizing: border-box;
+  box-shadow: inset 0px -8px 16px rgba(215, 10, 132, 0.2);
+  margin: 0;
+  padding: 0.3rem 3.25rem 0.38rem 3.25rem;
+}
+.main__button:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+  box-shadow: inset 0px -8px 14px rgba(215, 10, 132, 0.22);
+}
+.main__button:active {
+  box-shadow: inset 0px -8px 10px rgba(215, 10, 132, 0.3);
+}
+.text-contract {
+  align-self: flex-end;
+}
+.contract {
+  color: #fff;
+  font-size: 18px;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0.38rem 1.2rem 0.38rem 1.2rem;
+}
+
+.trailer {
+  display: flex;
+  position: relative;
+
+  align-self: flex-start;
+
+  width: 100%;
+  height: 0;
+  max-width: 710px;
+  padding-top: 56.25%;
+
+  box-shadow: 0 0 15px rgba(150, 116, 197, 0.3);
+}
+.trailer:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(150, 116, 197, 0.6);
+}
+.trailer iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* =========================== */
+/* Copy to clipboard style */
+/* :add "tooltip" class to a > #contract-adress */
+/* =========================== */
+/* .tooltip {
+  position: relative;
+} 
+.tooltiptext {
+  visibility: visible;
+  width: 50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  right: 7%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltiptext {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#object-that-you-put-cursor-over:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.8;
+} */
+/* =========================== */
+
+/*  */
+/*  */
+/*  */
+
+@supports (aspect-ratio: 16 / 9) {
+  .trailer {
+    height: auto;
+    width: 100%;
+    max-width: 710px;
+    max-height: 407px;
+
+    padding-top: 0;
+
+    aspect-ratio: 16 / 9;
+  }
+  .trailer iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 2559px) {
+}
+@media screen and (min-width: 1825px) {
+  .header::after {
+    height: 750px;
+  }
+}
+@media screen and (min-width: 1560px) {
+}
+@media screen and (max-width: 1025px) {
+  .header::after {
+    height: 1100px;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 3fr 0.15fr 50px 0.15fr 50px;
+    grid-template-areas:
+      'main-logo main-logo'
+      'trailer trailer'
+      'main-text main-text '
+      'main-button main-button'
+      'contract-text contract-text'
+      'contract-adress contract-adress';
+    justify-items: center;
+    justify-items: center;
+    row-gap: 15px;
+  }
+  .main__text {
+    align-self: flex-end;
+    text-align: center;
+  }
+  .text-contract {
+    align-self: flex-end;
+    text-align: left;
+  }
+  .trailer {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 921px) {
+}
+@media screen and (max-width: 889px) {
+  .header::after {
+    height: 1050px;
+  }
+  .nav__navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  .header::after {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .header::after {
+    height: 830px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .main__button span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .contract {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .contract {
+    font-size: 14px;
+  }
+  .main {
+    grid-template-rows: 0.3fr 2.2fr 0.15fr 50px 0.15fr 50px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .main__button span {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .contract {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
