@@ -1,5 +1,7 @@
 import React from 'react';
 import Unity, { UnityContext } from 'react-unity-webgl';
+import './styles/game.css';
+// import { Link } from 'react-router-dom';
 
 function Game() {
   const unityContext = new UnityContext({
@@ -10,15 +12,17 @@ function Game() {
   });
 
   return (
-    <div>
-      <p>Game page</p>
-      <Unity
-        unityContext={unityContext}
-        style={{
-          height: '100%',
-          width: 950,
-        }}
-      />
+    <div className="bg">
+      <div className="game-container">
+        {/* <Link to="/" className="link">
+        Return on site
+      </Link> */}
+        <Unity
+          unityContext={unityContext}
+          className="game"
+          // style={{ width: '960px', height: '600px', background: '#231F20' }}
+        />
+      </div>
     </div>
   );
 }

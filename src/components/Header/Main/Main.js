@@ -2,7 +2,7 @@ import '../../../styles/header.css';
 
 import moonbird from '../../../images/header/moonbird.png';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Main() {
   return (
@@ -16,7 +16,13 @@ function Main() {
       {/* <Link id="main-button" className="text main__button" to="/game">
         <span>Start gaming</span>
       </Link> */}
-      <a id="main-button" className=" text main__button">
+      <a
+        id="main-button"
+        href="https://han3ss.github.io/Moon-Bird-Demo/"
+        target="_blank"
+        rel="noreferrer"
+        className=" text main__button"
+      >
         <span>Start gaming</span>
       </a>
       <p id="contract-text" className="text main__text text-contract">
