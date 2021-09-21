@@ -25,7 +25,7 @@ function DesktopMenu() {
       </li>
       <li>
         <a
-          href="https://drive.google.com/file/d/197qJuHtM2VPNi9KMi5y7IKoVglCPeZyk/view"
+          href="https://drive.google.com/file/d/1uSqRDJdJodPnHd0Q2Z-yHdvvIoCg--Wt/view"
           target="_blank"
           rel="noreferrer"
           className="text"

@@ -5,24 +5,24 @@ import './styles/game.css';
 
 function Game() {
   const unityContext = new UnityContext({
-    loaderUrl: 'build/app.loader.js',
-    dataUrl: 'build/app.data',
-    frameworkUrl: 'build/app.framework.js',
-    codeUrl: 'build/app.wasm',
+    loaderUrl: 'build/demo.loader.js',
+    dataUrl: 'build/demo.data',
+    frameworkUrl: 'build/demo.framework.js',
+    codeUrl: 'build/demo.wasm',
+    streamingAssetsUrl: 'StreamingAssets',
   });
 
   return (
-    <div className="bg">
-      <div className="game-container">
-        {/* <Link to="/" className="link">
-        Return on site
-      </Link> */}
-        <Unity
-          unityContext={unityContext}
-          className="game"
-          // style={{ width: '960px', height: '600px', background: '#231F20' }}
-        />
-      </div>
+    <div className="game__container">
+      <Unity
+        unityContext={unityContext}
+        className="game"
+        style={{
+          width: '960px',
+          height: '600px',
+          background: '#231F20',
+        }}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import '../../../styles/tokenomics.css';
-import graph from '../../../images/tokenomics/graph.svg';
+import graph from '../../../images/tokenomics/graph.png';
 
 function Tokenomics() {
   return (
