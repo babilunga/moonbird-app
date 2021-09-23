@@ -1,7 +1,6 @@
 import React from 'react';
 import Unity, { UnityContext } from 'react-unity-webgl';
 import './styles/game.css';
-// import { Link } from 'react-router-dom';
 
 function Game() {
   const unityContext = new UnityContext({
@@ -14,15 +13,11 @@ function Game() {
 
   return (
     <div className="game__container">
-      <Unity
-        unityContext={unityContext}
-        className="game"
-        style={{
-          width: '960px',
-          height: '600px',
-          background: '#231F20',
-        }}
-      />
+      <div className="game__ratio-wrapper">
+        <div className="game__field">
+          <Unity unityContext={unityContext} className="game" />
+        </div>
+      </div>
     </div>
   );
 }

@@ -38,6 +38,9 @@ Header Nav Section
   padding: 0;
   margin: 0;
 }
+.nav__logo:hover {
+  cursor: pointer;
+}
 .nav__navbar {
   display: flex;
   text-align: center;

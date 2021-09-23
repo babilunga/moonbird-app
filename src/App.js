@@ -1,5 +1,4 @@
 import React from 'react';
-import bg from './images/game-bg.png';
 
 const App = ({ children }) => {
   return (

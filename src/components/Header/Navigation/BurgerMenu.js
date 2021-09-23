@@ -34,6 +34,17 @@ class BurgerMenu extends React.Component {
         >
           <li>
             <a
+              href="#home"
+              className="text burger__item"
+              name="burgerToggle"
+              value={false}
+              onClick={this.handleChange}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
               href="#birds"
               className="text burger__item"
               name="burgerToggle"

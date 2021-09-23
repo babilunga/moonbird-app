@@ -7,7 +7,10 @@ import BurgerMenu from './BurgerMenu';
 function Navigation() {
   return (
     <nav className="header__nav">
-      <img src={logo} alt="logo" className="nav__logo" />
+      <a className="nav__logo" href="/" alt="logo">
+        <img src={logo} alt="logo" />
+      </a>
+
       <DesktopMenu />
       <BurgerMenu />
     </nav>

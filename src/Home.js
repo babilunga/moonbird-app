@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 
 const SiteContent = () => {
   return (
-    <div>
+    <div id="home">
       <Header />
       <Birds />
       <Tokenomics />
