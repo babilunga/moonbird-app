@@ -13,6 +13,17 @@
       content="Crypto driven gamify project Moon Bird. Which mission is to provide you an endless game with simple gameplay and events with crypto awards."
     />
     <title>Moon Bird</title>
+    <script>
+      const domain1 = 'www.moonbird.fun';
+      const domain2 = 'moonbird.fun';
+      const host = window.location.host;
+      if (
+        (domain === host || domain2 === host) &&
+        window.location.protocol !== 'https:'
+      ) {
+        window.location.href = 'https://www.moonbird.fun';
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
