@@ -16,14 +16,14 @@ import Footer from './components/Footer/Footer';
 
 const Home = () => {
   const sayHello = () => {
-    console.log(
-      'Hello ' +
-        new Date().getHours() +
-        ':' +
-        new Date().getMinutes() +
-        ':' +
-        new Date().getSeconds()
-    );
+    // console.log(
+    //   'Hello ' +
+    //     new Date().getHours() +
+    //     ':' +
+    //     new Date().getMinutes() +
+    //     ':' +
+    //     new Date().getSeconds()
+    // );
   };
 
   const tasks = React.useMemo(
@@ -38,13 +38,13 @@ const Home = () => {
 
   return (
     <div id="home">
-      <Crontab
+      {/* <Crontab
         tasks={tasks}
         timeZone="UTC" // UTC timezone.
         dashboard={{
           hidden: true, // if true, dashboard is hidden
         }}
-      />
+      /> */}
       <Header />
       <Birds />
       <Tokenomics />
