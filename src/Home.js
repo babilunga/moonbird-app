@@ -1,7 +1,7 @@
 // React main
 import React from 'react';
-// import Crontab from 'reactjs-crontab';
-// import 'reactjs-crontab/dist/index.css';
+import Crontab from 'reactjs-crontab';
+import 'reactjs-crontab/dist/index.css';
 
 // Styles
 import './styles/main.css';
@@ -15,36 +15,37 @@ import Team from './components/Body/Team/Team';
 import Footer from './components/Footer/Footer';
 
 const Home = () => {
-  // const sayHello = () => {
-  // console.log(
-  //   'Hello ' +
-  //     new Date().getHours() +
-  //     ':' +
-  //     new Date().getMinutes() +
-  //     ':' +
-  //     new Date().getSeconds()
-  // );
-  // };
+  // const app = express();
+  const cron = () => {
+    console.log(
+      'Hello ' +
+        new Date().getHours() +
+        ':' +
+        new Date().getMinutes() +
+        ':' +
+        new Date().getSeconds()
+    );
+  };
 
-  // const tasks = React.useMemo(
-  //   () => [
-  //     {
-  //       fn: sayHello,
-  //       config: '* * * * *',
-  //     },
-  //   ],
-  //   []
-  // );
+  const tasks = [
+    {
+      fn: cron,
+      id: '1',
+      config: '59 23 * * *',
+      name: '',
+      description: '',
+    },
+  ];
 
   return (
     <div id="home">
-      {/* <Crontab
+      <Crontab
         tasks={tasks}
-        timeZone="UTC" // UTC timezone.
+        timeZone="UTC"
         dashboard={{
-          hidden: true, // if true, dashboard is hidden
+          hidden: true,
         }}
-      /> */}
+      />
       <Header />
       <Birds />
       <Tokenomics />
