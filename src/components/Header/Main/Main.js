@@ -18,7 +18,7 @@ function Main() {
       </Link> */}
       <a
         id="main-button"
-        href="https://moonbird.app/"
+        href="#"
         target="_blank"
         rel="noreferrer"
         className=" text main__button"
