@@ -13,13 +13,9 @@ function Main() {
         <br />
         The better you play, the more money you get.
       </p>
-      {/* <Link id="main-button" className="text main__button" to="/game">
-        <span>Start gaming</span>
-      </Link> */}
       <a
         id="main-button"
-        href="#"
-        target="_blank"
+        href="/"
         rel="noreferrer"
         className=" text main__button"
       >
